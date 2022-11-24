@@ -1,0 +1,83 @@
+*{
+    font-family: Arial;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-image: url(images/bgpic-ficha.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*esto es el header y el menu*/
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    border: solid black 2px;
+    margin-right: 10px;
+}
+.logo p{
+    color: white;
+    font-size: larger;
+}
+nav a{
+    color: white;
+    font-size: larger;
+    margin-right: 10px;
+}
+nav a:hover{
+    color: orange;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+@media (max-width:400px){
+    nav a{
+        font-size: small;
+    }
+}
+/*esto es la info de la ficha*/
+.info{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    color: black;
+}
+.info img{
+    border: solid black 5px;
+}
+.aboutme1{
+    margin-left: 1em;
+    margin-bottom: 2em;
+    color: black;
+}
+.aboutme2{
+    margin-left: 1em;
+    margin-bottom: 2em;
+    color: black;
+}
+@media (max-width:416px){
+    .info{
+        font-size: smaller;
+    }
+    .aboutme1{
+        font-size: smaller;
+    }
+}

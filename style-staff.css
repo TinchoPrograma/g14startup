@@ -1,0 +1,126 @@
+*{
+    font-family: Arial;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-image: url(images/bgpic.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+/*esto es el header y el menu*/
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    border: solid black 2px;
+    margin-right: 10px;
+}
+.logo p{
+    color: white;
+    font-size: larger;
+}
+nav a{
+    color: white;
+    font-size: larger;
+    margin-right: 10px;
+}
+nav a:hover{
+    color: orange;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+@media (max-width:400px){
+    nav a{
+        font-size: small;
+    }
+}
+/*este es el contenido de la pagina*/
+.portada{
+    text-align: center;
+}
+.portada img{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 20%;
+}
+@media (max-width: 700px){
+    .portada img{
+        width: 30%;
+    }
+}
+@media (max-width: 480px){
+    .portada img{
+        width: 50%;
+    }
+}
+@media (max-width: 320px){
+    .portada img{
+        width: 70%;
+    }
+}
+.integrantes{
+    text-align: center;
+    margin-top: 1em;
+}
+.integrantes ul li a{
+    color: white;
+}
+integrantes ul li a:hover{
+    color: orange;
+}
+/*esto es el footer*/
+.footer{
+    background-color: black;
+    position: sticky;
+    top: 100%;
+    width: 100%;
+}
+.footer ul li a{
+    color: white;
+    margin-left: 1em;
+}
+.footer ul li a:hover{
+    color: orange;
+}
+.footer p{
+    color: white;
+    margin-left: 1em;
+}
+.footer a{
+    color: white;
+    margin-left: 1em;
+}
+.footer a:hover{
+    color: blue;
+}
+@media (max-width: 400px){
+    .footer ul li a{
+        font-size: smaller;
+    }
+    .footer p{
+        font-size: smaller;
+    }
+    .footer a{
+        font-size: smaller;
+    }
+}
